@@ -7,7 +7,7 @@ CREATE USER 'user1'@'localhost' IDENTIFIED BY 'password';
 -- CREATE DATABASE
 CREATE DATABASE fullstack
 
--- CREATE ADDITIONAL TABLES
+-- CREATE TABLE
 CREATE TABLE products (
     product_id INT AUTO_INCREMENT PRIMARY KEY, -- Unique identifier for each product
     product_name VARCHAR(100) NOT NULL,        -- Name of the product
@@ -18,7 +18,6 @@ CREATE TABLE products (
 );
 
 
--- CREATE TABLE 
 CREATE TABLE categories (
     category_id INT AUTO_INCREMENT PRIMARY KEY, -- Unique identifier for each category
     category_name VARCHAR(100) NOT NULL,        -- Name of the category
