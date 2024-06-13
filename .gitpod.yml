@@ -1,0 +1,8 @@
+image: gitpod/workspace-mysql
+
+tasks:
+    - before: sdk install java 17.0.4.1-tem < /dev/null
+    - name: Setup Project
+      command: |
+        echo "Compiling Java files..."
+        javac -cp "JavaMysqlDatabase/lib/*" JavaMysqlDatabase/src/**/*.java -d bin

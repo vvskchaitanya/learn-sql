@@ -1,0 +1,15 @@
+-- Data Definition Language
+-- ALTER Command
+
+-- ALTER TABLE - DELETE COLUMN
+ALTER TABLE products
+DELETE COLUMN description;
+
+
+-- ALTER TABLE - ADD COLUMN
+ALTER TABLE products
+ADD COLUMN description VARCHAR(255);
+
+-- ALTER TABLE - MODIFY COLUMN
+ALTER TABLE products
+MODIFY COLUMN description VARCHAR(255) to TEXT;
